@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Survey</title>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/survey.css">
+	<script type="text/javascript" src="js/logic.js"></script>
+
+</head>
+<body>
+
+
+<div class='container'>
+
+	<div class='row'>
+		<div class='col s12 m12 center-align'>
+			<h1>Survey</h1>
+		</div>
+	</div>
+
+	<!-- The Survey Form -->
+	<div class='row'>
+		<div class='s6 offset-s6'>
+			<form>
+
+				<!-- About You Header -->
+				<div class="section">
+					<h4>Welcome to the Peanuts Gang<img src="../images/PeanutsGang.jpeg" style="width:250px;height:200px;"></h4>
+					<div class="divider"></div>
+				</div>
+
+
+				<!-- Name Input -->
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">account_circle</i>
+						<input id="nameInput" type="text" class="validate">
+						<label class="active" for="nameInput">Name</label>
+					</div>
+				</div>
+
+				<!-- Image Link Input -->
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">perm_media</i>
+						<input id="imageInput" type="text" class="validate">
+						<label class="active" for="imageInput">Image Link</label>
+					</div>
+				</div>
+
+				<!-- Questions Header -->
+				<div class="section">
+					<h4>Survey Questions</h4>
+					<div class="divider"></div>
+				</div>
+				
+				
+				<!-- Questions -->
+				<div class='section'>
+					<p>1) Do you like to have adventures?</p>
+					<input name="question1" type="radio" id="star1" value="1"/>
+					<label for="star1">Strongly Disagree</label>
+					<input name="question1" type="radio" id="star2" value="2"/>
+					<label for="star2">Disagree</label>
+					<input name="question1" type="radio" id="star3"  value="3"/>
+					<label for="star3">Neutral</label>
+					<input name="question1" type="radio" id="star4" value="4" />
+					<label for="star4">Agree</label>
+					<input name="question1" type="radio" id="star5" value="5" />
+					<label for="star5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>2) Do you like Christmas?</p>
+					<input name="question2" type="radio" id="comic1" value="1"/>
+					<label for="comic1">Strongly Disagree</label>
+					<input name="question2" type="radio" id="comic2" value="2"/>
+					<label for="comic2">Disagree</label>
+					<input name="question2" type="radio" id="comic3"  value="3"/>
+					<label for="comic3">Neutral</label>
+					<input name="question2" type="radio" id="comic4" value="4" />
+					<label for="comic4">Agree</label>
+					<input name="question2" type="radio" id="comic5" value="5" />
+					<label for="comic5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>3) Do you like Jazz music?</p>
+					<input name="question3" type="radio" id="super1" value="1"/>
+					<label for="super1">Strongly Disagree</label>
+					<input name="question3" type="radio" id="super2" value="2"/>
+					<label for="super2">Disagree</label>
+					<input name="question3" type="radio" id="super3"  value="3"/>
+					<label for="super3">Neutral</label>
+					<input name="question3" type="radio" id="super4" value="4" />
+					<label for="super4">Agree</label>
+					<input name="question3" type="radio" id="super5" value="5" />
+					<label for="super5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>4) Do you like to dance?</p>
+					<input name="question4" type="radio" id="coke1" value="1"/>
+					<label for="coke1">Strongly Disagree</label>
+					<input name="question4" type="radio" id="coke2" value="2"/>
+					<label for="coke2">Disagree</label>
+					<input name="question4" type="radio" id="coke3"  value="3"/>
+					<label for="coke3">Neutral</label>
+					<input name="question4" type="radio" id="coke4" value="4" />
+					<label for="coke4">Agree</label>
+					<input name="question4" type="radio" id="coke5" value="5" />
+					<label for="coke5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>5) Do you like football?</p>
+					<input name="question5" type="radio" id="season1" value="1"/>
+					<label for="season1">Strongly Disagree</label>
+					<input name="question5" type="radio" id="season2" value="2"/>
+					<label for="season2">Disagree</label>
+					<input name="question5" type="radio" id="season3"  value="3"/>
+					<label for="season3">Neutral</label>
+					<input name="question5" type="radio" id="season4" value="4" />
+					<label for="season4">Agree</label>
+					<input name="question5" type="radio" id="season5" value="5" />
+					<label for="season5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>6) Do you like baseball?</p>
+					<input name="question6" type="radio" id="drink1" value="1"/>
+					<label for="drink1">Strongly Disagree</label>
+					<input name="question6" type="radio" id="drink2" value="2"/>
+					<label for="drink2">Disagree</label>
+					<input name="question6" type="radio" id="drink3"  value="3"/>
+					<label for="drink3">Neutral</label>
+					<input name="question6" type="radio" id="drink4" value="4" />
+					<label for="drink4">Agree</label>
+					<input name="question6" type="radio" id="drink5" value="5" />
+					<label for="drink5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>7) Do you like dogs?</p>
+					<input name="question7" type="radio" id="pet1" value="1"/>
+					<label for="pet1">Strongly Disagree</label>
+					<input name="question7" type="radio" id="pet2" value="2"/>
+					<label for="pet2">Disagree</label>
+					<input name="question7" type="radio" id="pet3"  value="3"/>
+					<label for="pet3">Neutral</label>
+					<input name="question7" type="radio" id="pet4" value="4" />
+					<label for="pet4">Agree</label>
+					<input name="question7" type="radio" id="pet5" value="5" />
+					<label for="pet5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>8) Do you like birds?</p>
+					<input name="question8" type="radio" id="show1" value="1"/>
+					<label for="show1">Strongly Disagree</label>
+					<input name="question8" type="radio" id="show2" value="2"/>
+					<label for="show2">Disagree</label>
+					<input name="question8" type="radio" id="show3"  value="3"/>
+					<label for="show3">Neutral</label>
+					<input name="question8" type="radio" id="show4" value="4" />
+					<label for="show4">Agree</label>
+					<input name="question8" type="radio" id="show5" value="5" />
+					<label for="show5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>9) Do you like blankets?</p>
+					<input name="question9" type="radio" id="computer1" value="1"/>
+					<label for="computer1">Strongly Disagree</label>
+					<input name="question9" type="radio" id="computer2" value="2"/>
+					<label for="computer2">Disagree</label>
+					<input name="question9" type="radio" id="computer3"  value="3"/>
+					<label for="computer3">Neutral</label>
+					<input name="question9" type="radio" id="computer4" value="4" />
+					<label for="computer4">Agree</label>
+					<input name="question9" type="radio" id="computer5" value="5" />
+					<label for="computer5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>10) Do you like to fly kites?</p>
+					<input name="question10" type="radio" id="food1" value="1"/>
+					<label for="food1">Strongly Disagree</label>
+					<input name="question10" type="radio" id="food2" value="2"/>
+					<label for="food2">Disagree</label>
+					<input name="question10" type="radio" id="food3"  value="3"/>
+					<label for="food3">Neutral</label>
+					<input name="question10" type="radio" id="food4" value="4" />
+					<label for="food4">Agree</label>
+					<input name="question10" type="radio" id="food5" value="5" />
+					<label for="food5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+				<button class="waves-effect waves-light btn-large" id="submit" type="button">
+					Submit
+				</button>
+				</div>
+
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<h4>Your closest match was...</h4>
+						<span id='modalArea'></span>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	</div>
+
+</div>
+
+</script>
+</body>
+</html>
