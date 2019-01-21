@@ -19,7 +19,7 @@ var path = require('path')
 var app = express();
 
 // Our port will be whatever we are given, or if given nothing it will be 80.
-var appPORT = process.env.PORT || 80;
+var appPORT = process.env.PORT || 8080;
 
 // Enabling Express to serve static files. (Allows our JavaScript & CSS files to be used)
 app.use(express.static('app/public'));
